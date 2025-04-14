@@ -24,13 +24,13 @@ test {
 jar {
     manifest {
         attributes(
-                'Main-Class': 'org.example.Main' // Заменить на твой путь к классу с main()
+                'Main-Class': 'App'
         )
     }
 }
 
 shadowJar {
-    archiveBaseName.set('App')  // Название Fat JAR файла
-    archiveClassifier.set('')      // Убираем "-all" из имени
-    archiveVersion.set('')         // Убираем версию из имени
+    archiveBaseName.set('myname')
+    archiveClassifier.set('')
+    archiveVersion.set('')
 }
